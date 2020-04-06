@@ -1,0 +1,39 @@
+{{ define "content" }}
+<div class="doc-wrapper">
+    <div class="container">
+        <div class="doc-body row" >
+          <div class="doc-content col-md-9 col-12 order-1">
+            <div class="content-inner">
+              <section class="doc-section">
+                  <!-- <time class="f6 mv4 dib tracked" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                    {{- .Date.Format "January 2, 2006" -}}
+                  </time> -->
+                  <h2 class="section-title">{{ .Title }}</h2>
+                  <div class="section-block">
+                    {{- .Content -}}
+                  </div>
+              </section>
+
+              <section class="doc-section">
+                {{ template "_internal/disqus.html" . }}
+              </section>
+            </div>
+          </div>
+          <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+            <div id="doc-nav" class="doc-nav">
+              <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                {{ range where .Site.Pages.Reverse "Section" .Section }}
+                  {{ if not (eq .Title "Docs") }}
+                  <a class="nav-link" href="{{ .Permalink }}">{{ .Title }}</a>
+                  {{ end }}
+                {{ end }}
+                <!-- <nav class="doc-sub-menu nav flex-column">
+                    <a class="nav-link scrollto" href="#projects">Projects</a>
+                </nav> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+{{ end }}

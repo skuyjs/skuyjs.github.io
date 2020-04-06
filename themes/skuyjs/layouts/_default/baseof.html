@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <title>
+      {{ if .Title }}
+        {{ .Site.Title }} - {{ .Title }}
+      {{ else }}
+        {{ .Site.Title }}
+      {{ end }}
+    </title>
+
+    {{ partialCached "site-head.html" . }}
+
+</head>
+
+<body class="landing-page">
+    {{ partialCached "site-header.html" . }}
+
+    {{ block "content" . }}
+    {{ end }}
+
+    {{ partialCached "site-footer.html" . }}
+
+    {{ partialCached "site-scripts.html" . }}
+</body>
+</html>

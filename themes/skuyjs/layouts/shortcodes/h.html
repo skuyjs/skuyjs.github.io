@@ -1,0 +1,18 @@
+{{ $level := .Get 0 }}
+{{ $id := anchorize .Inner }}
+
+<a href="#{{ $id }}" id="{{ $id }}">
+  <h{{$level}}>
+    {{ .Inner }}
+  </h{{$level}}>
+</a>
+
+<style>
+  #{{ $id }} {
+    color: #494d55;
+  }
+
+  #{{ $id }}:hover {
+    text-decoration: none;
+  }
+</style>
