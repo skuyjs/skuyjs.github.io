@@ -7,4 +7,4 @@ theme = "skuyjs"
 description = "Http server framework for NodeJS"
 
 [params.copyright]
-text = "Designed with <i class='fas fa-heart'></i> by <a href='https://github.com/hadihammurabi' target='_blank'>@hadihammurabi</a> and <a href='https://github.com/orgs/skuyjs/people' target='_blank'>all contributors</a> for developers"
+text = "Built with <i class='fas fa-heart'></i> by <a href='https://github.com/hadihammurabi' target='_blank'>@hadihammurabi</a> and <a href='https://github.com/orgs/skuyjs/people' target='_blank'>all contributors</a> for developers"
