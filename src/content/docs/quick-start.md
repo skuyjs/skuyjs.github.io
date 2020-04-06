@@ -4,4 +4,61 @@ date: 2020-04-05T19:23:50+07:00
 draft: false
 ---
 
-{{< h 1 >}}this is quick start{{< /h >}}
+Pada bagian ini, Anda akan melihat dasar penggunaan SkuyJS.
+Agar terbiasa dengan proses pembuatan aplikasi menggunakan
+SkuyJS, kita akan membuat operasi dasar CRUD menggunakan REST API
+dengan fitur-fitur yang melibatkan hal-hal dasar.
+
+{{< h 3 Prasyarat >}}
+Sebelum memulai, pastikan Anda sudah menginstall alat di bawah ini.
+* [NodeJS](https://nodejs.org) versi 10.13.0 atau lebih tinggi.
+* Pengedit Kode
+
+Agar lebih lancar, sedikit pengetahuan tentang teknologi
+di bawah ini akan sangat mendukung.
+* Javascript
+* NodeJS
+* REST API
+
+{{< h 3 "Pengaturan Awal" >}}
+
+Buatlah struktur direktori seperti di bawah ini.
+{{< rawhtml >}}
+<div class="tree">
+  <ul>
+    <li>
+      <span><i class="fa fa-folder"></i> skuyjs-project</span>
+      <ul>
+        <li>
+          <span>
+            <i class="fa fa-folder"></i> models
+          </span>
+          <ul>
+            <li><span><i class="devicon-javascript-plain"></i> index.js</span></li>
+          </ul>
+        </li>
+        <li>
+          <span><i class="fa fa-folder"></i> controllers</span>
+          <ul>
+            <li><span><i class="devicon-javascript-plain"></i> index.js</span></li>
+          </ul>
+        </li>
+        <li>
+          <span><i class="devicon-javascript-plain"></i> index.js</span>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+{{< /rawhtml >}}
+
+Kemudian buatlah file **package.json** agar direktori **skuyjs-project** menjadi
+paket npm dengan menjalankan perintah berikut.
+```bash
+$ npm init -y
+```
+
+Selanjutnya instalasi modul HTTP dari SkuyJS dengan menjalankan perintah berikut.
+```bash
+$ npm i @skuyjs/http-server
+```

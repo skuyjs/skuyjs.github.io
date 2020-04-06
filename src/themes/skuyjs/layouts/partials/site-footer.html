@@ -7,12 +7,8 @@
   </div>
 </footer> -->
 
-<footer class="footer text-center pb-5">
+<footer class="footer text-center">
     <div class="container">
-        <small class="copyright">
-          &copy; {{ now.Format "2006"}}. Allright reserved.
-        </small>
-        <br/>
         <small class="copyright">
           {{ with .Site.Params.copyright.text | default .Site.Title }} {{ . | safeHTML }} {{ end }}
         </small>

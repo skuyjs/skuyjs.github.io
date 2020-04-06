@@ -1,9 +1,10 @@
 {{ $level := .Get 0 }}
-{{ $id := anchorize .Inner }}
+{{ $value := .Get 1 }}
+{{ $id := (anchorize $value) }}
 
 <a href="#{{ $id }}" id="{{ $id }}">
   <h{{$level}}>
-    {{ .Inner }}
+    {{ $value }}
   </h{{$level}}>
 </a>
 

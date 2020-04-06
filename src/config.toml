@@ -2,9 +2,20 @@ baseURL = "https://skuyjs.github.io"
 languageCode = "en-us"
 title = "SkuyJS"
 theme = "skuyjs"
+defaultContentLanguage = "id"
 
-[params]
+[languages.id]
+languageName = "Bahasa Indonesia"
+weight = 1
+description = "Framework HTTP Server untuk NodeJS"
+
+[languages.id.copyright]
+text = "Dibuat dengan <i class='fas fa-heart'></i> oleh <a href='https://github.com/hadihammurabi' target='_blank'>@hadihammurabi</a> dan <a href='https://github.com/orgs/skuyjs/people' target='_blank'>para pihak yang terlibat</a> untuk seluruh developer"
+
+[languages.en]
+languageName = "english"
+weight = 2
 description = "Http server framework for NodeJS"
 
-[params.copyright]
+[languages.en.copyright]
 text = "Built with <i class='fas fa-heart'></i> by <a href='https://github.com/hadihammurabi' target='_blank'>@hadihammurabi</a> and <a href='https://github.com/orgs/skuyjs/people' target='_blank'>all contributors</a> for developers"
