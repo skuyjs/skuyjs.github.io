@@ -1,0 +1,12 @@
+name = "SkuyJS Gohugo Theme"
+description = "A theme for building documentation site"
+license = "MIT"
+licenselink = ""
+homepage = "https://github.com/skuyjs"
+tags = ["website", "documentation", "responsive", "blog"]
+features = ["posts", "shortcodes", "comments"]
+min_version = "0.0.1"
+
+[author]
+  name = "Hadi Hidayat Hammurabi"
+  homepage = "https://hadihammurabi.com"
