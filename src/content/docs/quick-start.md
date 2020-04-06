@@ -62,3 +62,10 @@ Selanjutnya instalasi modul HTTP dari SkuyJS dengan menjalankan perintah berikut
 ```bash
 $ npm i @skuyjs/http-server
 ```
+
+Pada tahap ini, Anda dapat melihat pada file **package.json** di
+bagian **dependencies** terdapat **@skuyjs/http-server** bersama
+dengan versinya. Artinya, Anda sudah berhasil menginstalasi modul
+yang paling utama dari SkuyJS ini.
+
+> Selanjutnya, mari kita mulai menulis kode!
