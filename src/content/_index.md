@@ -13,7 +13,7 @@ draft: false
       <div class="intro">
         <p>Welcome to SkuyJS. <br/>This framework is born from curiosity.</p>
         <div class="cta-container">
-          <a class="btn btn-primary btn-cta" href="{{< siteurl >}}docs/getting-started"><i class="fas fa-rocket"></i> Getting Started</a>
+          <a class="btn btn-primary btn-cta" href="{{< siteurl >}}/docs/getting-started"><i class="fas fa-rocket"></i> Getting Started</a>
         </div>
       </div>
       <div id="cards-wrapper" class="cards-wrapper row">
@@ -24,7 +24,7 @@ draft: false
             </div>
             <h3 class="title">Quick Start</h3>
             <p class="intro">Step by step quick starting application project.</p>
-            <a class="link" href="{{< siteurl >}}docs/quick-start"><span></span></a>
+            <a class="link" href="{{< siteurl >}}/docs/quick-start"><span></span></a>
           </div>
         </div>
 
@@ -35,7 +35,7 @@ draft: false
             </div>
             <h3 class="title">FAQs</h3>
             <p class="intro">Want to ask? Read this first! Some question was asked by others.</p>
-            <a class="link" href="{{< siteurl >}}faqs"><span></span></a>
+            <a class="link" href="{{< siteurl >}}/faqs"><span></span></a>
           </div>
         </div>
 
@@ -46,7 +46,7 @@ draft: false
             </div>
             <h3 class="title">License &amp; Credits</h3>
             <p class="intro">What you can do or can't.</p>
-            <a class="link" href="{{< siteurl >}}license-and-credits"><span></span></a>
+            <a class="link" href="{{< siteurl >}}/license-and-credits"><span></span></a>
           </div>
         </div>
       </div>
