@@ -9,5 +9,19 @@ paket npm dengan menjalankan perintah berikut.</p><div class=highlight><pre styl
 </code></pre></div><p>Pada tahap ini, Anda dapat melihat pada file <strong>package.json</strong> di
 bagian <strong>dependencies</strong> terdapat <strong>@skuyjs/http-server</strong> bersama
 dengan versinya. Artinya, Anda sudah berhasil menginstalasi modul
-yang paling utama dari SkuyJS ini.</p><blockquote><p>Selanjutnya, mari kita mulai menulis kode!</p></blockquote></div></section><section class=doc-section></section></div></div><div id=doc-menu class="col-md-3 col-12 order-0 d-none d-md-block"><div class=doc-nav><nav class="nav doc-menu flex-column sticky"><a class=nav-link href=https://skuyjs.github.io/docs/quick-start/>Quick Start</a>
+yang paling utama dari SkuyJS ini.</p><p>Selanjutnya, mari kita mulai menulis kode!</p><p><a href=#menulis-kode id=menulis-kode><h3>Menulis Kode</h3></a><style>#menulis-kode{color:#494d55}#menulis-kode:hover{text-decoration:none}</style>Kode yang pertama kali harus dibuat adalah pada file <strong>index.js</strong>. Ketikkan kode
+berikut ini pada file tersebut.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>Server</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#39;@skuyjs/http-server&#39;</span>);
+<span style=color:#66d9ef>const</span> <span style=color:#a6e22e>server</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Server</span>();
+
+<span style=color:#a6e22e>server</span>.<span style=color:#a6e22e>get</span>(<span style=color:#e6db74>&#39;/&#39;</span>, (<span style=color:#a6e22e>req</span>, <span style=color:#a6e22e>res</span>) =&gt; {
+  <span style=color:#a6e22e>res</span>.<span style=color:#a6e22e>send</span>(<span style=color:#e6db74>&#39;hello&#39;</span>);
+});
+
+<span style=color:#a6e22e>server</span>.<span style=color:#a6e22e>listen</span>(<span style=color:#ae81ff>8080</span>, () =&gt; {
+  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#39;SkuyJS sedang berjalan ...&#39;</span>);
+});
+</code></pre></div><p>Pastikan Anda menyimpan kode tersebut. Setelah itu, jalankan perintah di bawah ini.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>$ node index
+</code></pre></div><p>Sampai di sini, kita sudah berhasil menjalankan SkuyJS. Selanjutnya, buka web
+browser kesukaan Anda, bisa Firefox, Chrome, atau lainnya. Kemudian akses URL
+<strong>http://localhost:8080/</strong>.</p></div></section><section class=doc-section></section></div></div><div id=doc-menu class="col-md-3 col-12 order-0 d-none d-md-block"><div class=doc-nav><nav class="nav doc-menu flex-column sticky"><a class=nav-link href=https://skuyjs.github.io/docs/quick-start/>Quick Start</a>
 <a class=nav-link href=https://skuyjs.github.io/docs/getting-started/>Getting Started</a></nav></div></div></div></div></div><footer class="footer text-center text-white py-3" style=background-color:#26282c><div class=container><small class=copyright>Dibuat dengan <i class="fas fa-heart"></i>oleh <a href=https://github.com/hadihammurabi target=_blank>@hadihammurabi</a> dan <a href=https://github.com/orgs/skuyjs/people target=_blank>para pihak yang terlibat</a> untuk seluruh developer</small></div></footer><script defer src=https://use.fontawesome.com/releases/v5.13.0/js/all.js></script><script async defer src=https://buttons.github.io/buttons.js></script><script type=text/javascript src=https://skuyjs.github.io/plugins/jquery/jquery-3.3.1.min.js></script><script type=text/javascript src=https://skuyjs.github.io/plugins/bootstrap/js/bootstrap.min.js></script><script type=text/javascript src=https://skuyjs.github.io/plugins/stickyfill/stickyfill.min.js></script><script type=text/javascript src=https://skuyjs.github.io/js/main.js></script></body></html>

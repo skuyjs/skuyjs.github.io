@@ -68,4 +68,30 @@ bagian **dependencies** terdapat **@skuyjs/http-server** bersama
 dengan versinya. Artinya, Anda sudah berhasil menginstalasi modul
 yang paling utama dari SkuyJS ini.
 
-> Selanjutnya, mari kita mulai menulis kode!
+Selanjutnya, mari kita mulai menulis kode!
+
+{{< h 3 "Menulis Kode" >}}
+Kode yang pertama kali harus dibuat adalah pada file **index.js**. Ketikkan kode
+berikut ini pada file tersebut.
+
+```javascript
+const Server = require('@skuyjs/http-server');
+const server = new Server();
+
+server.get('/', (req, res) => {
+  res.send('hello');
+});
+
+server.listen(8080, () => {
+  console.log('SkuyJS sedang berjalan ...');
+});
+```
+
+Pastikan Anda menyimpan kode tersebut. Setelah itu, jalankan perintah di bawah ini.
+```bash
+$ node index
+```
+
+Sampai di sini, kita sudah berhasil menjalankan SkuyJS. Selanjutnya, buka web
+browser kesukaan Anda, bisa Firefox, Chrome, atau lainnya. Kemudian akses URL
+**http://localhost:8080/**.

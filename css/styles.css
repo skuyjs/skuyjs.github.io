@@ -128,6 +128,12 @@ pre {
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
+blockquote {
+  color: #6a737d;
+  border-left: .25em solid #dfe2e5;
+  padding: 0 1em;
+}
+
 .bg-primary {
   background-color: var(--primary) !important;
 }
