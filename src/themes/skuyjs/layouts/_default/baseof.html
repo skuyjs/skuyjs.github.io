@@ -22,5 +22,8 @@
     {{ partialCached "site-footer.html" . }}
 
     {{ partialCached "site-scripts.html" . }}
+
+    {{ block "script" . }}
+    {{ end }}
 </body>
 </html>

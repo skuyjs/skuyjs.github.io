@@ -1,42 +1,11 @@
-<!-- {{ $featured_image := .Param "featured_image"}}
-{{ if $featured_image }}
-  {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
-  {{ $featured_image := (trim $featured_image "/") | absURL }}
-  <header class="cover bg-top" style="background-image: url('{{ $featured_image }}');">
-    <div class="{{ .Site.Params.cover_dimming_class | default "bg-black-60" }}">
-      {{ partial "site-navigation.html" .}}
-      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          {{ .Title | default .Site.Title }}
-        </h1>
-        {{ with .Params.description }}
-          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
-            {{ . }}
-          </h2>
-        {{ end }}
-      </div>
-    </div>
-  </header>
-{{ else }}
-  <header>
-    <div class="pb3-m pb6-l {{ .Site.Params.background_color_class | default "bg-black" }}">
-      {{ partial "site-navigation.html" . }}
-      <div class="tc-l pv3 ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          {{ .Title | default .Site.Title }}
-        </h1>
-        {{ with .Params.description }}
-          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
-            {{ . }}
-          </h2>
-        {{ end }}
-      </div>
-    </div>
-  </header>
-{{ end }} -->
+<div class="d-block d-lg-none position-fixed bg-primary p-1" style="z-index: 1000">
+  <button class="btn btn-primary" id="elips-menu">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
 
-<header class="header text-center">
-  <div class="container">
+<header class="header">
+  <div class="container text-center">
     <div class="branding mb-0">
       <h1 class="logo">
         <a class="text-highlight text-white" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>

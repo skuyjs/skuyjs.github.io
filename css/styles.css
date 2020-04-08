@@ -1,3 +1,10 @@
+:root {
+  --primary: #0099AA;
+  --bg-primary: #f8f9fa;
+  --light: #f8f9fa;
+  --dark: #26282c;
+}
+
 .tree {
     min-height:20px;
     padding:40px 0;
@@ -86,16 +93,12 @@ html, body {
   height: 50px;
 }
 
-.footer {
-  height: 50px;
-}
-
 p {
   line-height: 1.5;
 }
 
 a {
-  color: #3aa7aa;
+  color: var(--primary); /*#3aa7aa;*/
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -112,14 +115,21 @@ a:focus {
 }
 
 code {
-  background: #222;
+  background: var(--dark);
   color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  padding: 2px 8px;
+  font-family: var(--font-family-monospace);
+  padding: 3px 8px;
   padding-top: 4px;
   display: inline-block;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
 }
 
 .btn, a.btn {
@@ -139,8 +149,8 @@ code {
 }
 
 .btn-primary, a.btn-primary {
-  background: #40babd;
-  border: 1px solid #40babd;
+  background: var(--primary);
+  border: 1px solid var(--primary);
   color: #fff !important;
 }
 
@@ -294,7 +304,7 @@ select {
 .header {
   background: #494d55;
   color: rgba(255, 255, 255, 0.85);
-  border-top: 5px solid #40babd;
+  border-top: 5px solid var(--primary);
   padding: 30px 0;
 }
 
@@ -322,7 +332,7 @@ select {
 }
 
 .branding .text-highlight {
-  color: #40babd;
+  color: var(--primary);
 }
 
 .body-green .branding .text-highlight {
@@ -356,7 +366,7 @@ select {
 
 .branding .icon {
   font-size: 24px;
-  color: #40babd;
+  color: var(--primary);
 }
 
 .body-green .branding .icon {
@@ -459,7 +469,7 @@ select {
 }
 
 .footer a {
-  color: #40babd;
+  color: var(--primary);
 }
 
 .footer .fa-heart {
@@ -489,7 +499,7 @@ select {
 }
 
 .doc-header .doc-title {
-  color: #40babd;
+  color: var(--primary);
   margin-top: 0;
   font-size: 36px;
 }
@@ -976,7 +986,7 @@ select {
 
 .doc-menu .nav-link.active {
   background: none;
-  color: #40babd;
+  color: var(--primary);
   font-weight: 600;
 }
 
@@ -1041,7 +1051,7 @@ select {
 
 .doc-sub-menu .nav-link.active {
   background: none;
-  color: #40babd;
+  color: var(--primary);
 }
 
 .body-green .doc-sub-menu .nav-link.active {
@@ -1283,7 +1293,7 @@ select {
 
 .landing-page .branding .icon {
   font-size: 32px;
-  color: #40babd;
+  color: var(--primary);
 }
 
 .landing-page .tagline {
@@ -1400,7 +1410,7 @@ select {
 }
 
 .cards-section .item-primary .item-inner {
-  border-top: 3px solid #40babd;
+  border-top: 3px solid var(--primary);
 }
 
 .cards-section .item-primary .item-inner:hover .title {
@@ -1408,7 +1418,7 @@ select {
 }
 
 .cards-section .item-primary .icon {
-  color: #40babd;
+  color: var(--primary);
 }
 
 .cards-section .item-green .item-inner {
@@ -1489,6 +1499,20 @@ select {
   }
   .main-search-box .search-form .search-input {
     width: 100%;
+  }
+
+  #doc-menu>div {
+    position: fixed;
+    margin-top: 40px;
+  }
+
+  #doc-menu nav {
+    background-color: var(--primary) !important;
+    /* width: 90%; */
+  }
+
+  #doc-menu nav a {
+    color: white !important;
   }
 }
 
